@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Nome da cidade" id="inp">
+
+        <button id="btn" onclick="pesquisar()">
+            <img src="https://www.svgrepo.com/show/488200/find.svg" alt="lupa" class="lupa">
+        </button>
+
+        <div class="content">
+
+            <h2 class="cidade">Tempo em ...</h2>
+
+            <p class="temp">...°C</p>
+
+            <div class="icon-content">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="status" class="icon">
+                <p class="descricao">...</p>
+            </div>
+
+            <p class="umidade">Umidade: ...</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
