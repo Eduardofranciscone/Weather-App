@@ -1,4 +1,4 @@
-function dadosNaTela(dados) {
+function renderizarClima(dados) {
     console.log(dados)
 
     document.querySelector(".cidade").innerHTML = "tempo em " + dados.name
@@ -8,21 +8,21 @@ function dadosNaTela(dados) {
     document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
 
 }
-async function buscarCidade(cidade) {
+async function buscarClimaPorCidade(cidade) {
 
     let chave = "e6255bc556e042edef76380f3459ed89"
 
     let dados = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cidade + "&appid=" + chave + "&lang=pt_br" + "&units=metric").then(resposta => resposta.json())
 
-    dadosNaTela(dados)
+    renderizarClima(dados)
 }
 
-function pesquisar() {
+function validarBusca() {
     let cidade = document.querySelector("#inp").value
 
     if (cidade == "") {
         alert("Preencha o campo para continuar")
     }
-    
-    buscarCidade(cidade)
+
+    buscarClimaPorCidade(cidade)
 }
