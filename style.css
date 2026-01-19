@@ -45,25 +45,25 @@ button{
     border-radius: 4px;
     cursor: pointer;
 }
-.wheather-data{
+#wheather-data{
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
 }
 
-.wheather-data h2{
+#wheather-data h2{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.6rem;
 }
 
-.wheather-data h2 i{
+#wheather-data h2 i{
     font-size: 1rem;
 }
 
-.wheather-data span{
+#wheather-data span{
     margin: 0.6rem;
 }
 

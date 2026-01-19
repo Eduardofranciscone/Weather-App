@@ -24,17 +24,18 @@
             <h3>Confira o clima de uma cidade:</h3>
             <div class="form-input-container">
                 <input type="text" placeholder="Nome da cidade" id="city-input">
-                <button id="search" onclick="pesquisar()">
+                <button id="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
-        <div class="wheather-data">
+        <div id="wheather-data" class="hide">
             <h2>
                 <i class="fa-solid fa-location-dot"></i>
                 <span id="city"></span>
-            </h2>
-            <p class="temperature"><span>38</span>&deg;c</p>
+                <img src="" alt="" id="country">
+            </h2> 
+            <p id="temperature"><span>38</span>&deg;c</p>
             <div id="description-container">
                 <p id="description">Ensolarado</p>
                 <img src="" alt="condições do tempo" id="weather-icon">                
@@ -44,7 +45,7 @@
                     <i class="fa-solid fa-droplet"></i>
                     <span>48%</span>
                 </p>
-                <p class="wind">
+                <p id="wind">   
                     <i class="fa-solid fa-wind"></i>
                     <span>7 km/h</span>
                 </p>
